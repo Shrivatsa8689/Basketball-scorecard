@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <h3 style="font-size: 80px; text-align:center" id="setno">SET 1</h3>
+        <div class="container">
+            
+            <div>
+                <h3 style="font-size: 100px;">HOME</h3>
+                <div class="setwins" id="homewins">0</div>
+                <div class="boxed" id="homescore">0</div>
+                <table><tr>
+                    <th><button id="h1" onclick="add(this.id)">+1</button></th>
+                    <th><button id="h2" onclick="add(this.id)">+2</button></th>
+                    <th><button id="h3" onclick="add(this.id)">+3</button></th></tr>
+                </table>
+                <div class="fault">
+                    <button id="hf" class="btn btn-danger" onclick="add(this.id)">Fault</button>
+                    <div class="faults" id="homefault">0</div>
+                </div>
+            </div>
+            <div>
+                
+                <h3 style="font-size: 100px;">GUEST</h3>
+                <div class="setwins" id="guestwins">0</div>
+                <div class="boxed" id="guestscore">0</div>
+                <table><tr>
+                    <th><button id="g1" onclick="add(this.id)">+1</button></th>
+                    <th><button id="g2" onclick="add(this.id)">+2</button></th>
+                    <th><button id="g3" onclick="add(this.id)">+3</button></th></tr>
+                </table>
+                <div class="fault">
+                    <button id="gf" class="btn btn-danger" onclick="add(this.id)">Fault</button>
+                    <div class="faults" id="guestfault">0</div>
+                </div>
+            </div>
+            <div class="newbuttons">
+                <div style="text-align:center"><button id="newset" class="btn btn-primary" style="text-align:center" onclick="newset()"> New Set</button></div>
+                <div style="text-align:center"><button id="newgame" class="btn btn-primary" style="text-align:center" onclick="newgame()"> New Game</button></div>
+            </div>
+        </div>
+        
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <script src="index.js"></script>
+        
+
+    </body>
+</html>
